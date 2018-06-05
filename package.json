@@ -1,0 +1,19 @@
+{
+  "name": "vayu",
+  "version": "1.0.0",
+  "description": "Using node.js to create a web application to read from a csv file and display it in html, json and xml formats. ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": "8.11.2"
+  },
+  "author": "Sujata Niroula",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "readline-specific": "^1.0.4"
+  }
+}
