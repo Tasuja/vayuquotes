@@ -7,6 +7,10 @@ app.set('view engine','jade');
 
 var read= require('readline-specific');
 getData();
+app.get('/', function (req, res) {
+	getData();
+	res.send('Hello World!');
+});
 app.get('/quote', function (req, res) {
 	getData();
 	res.send('Hello World!');
