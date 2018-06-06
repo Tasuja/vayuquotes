@@ -9,11 +9,11 @@ var read= require('readline-specific');
 getData();
 app.get('/', function (req, res) {
 	getData();
-	res.send('Hello World!');
+	res.render(__dirname+'/view/'+'quote',{Title:title, Author:author});
 });
 app.get('/quote', function (req, res) {
 	getData();
-	res.send('Hello World!');
+	res.render(__dirname+'/view/'+'quote',{Title:title, Author:author});
 });
 app.get('/quote.xml', function (req, res) {
 	getData();
