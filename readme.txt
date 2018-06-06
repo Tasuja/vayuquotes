@@ -1,5 +1,5 @@
  Author: Sujata Niroula
- Heroku Link: https://limitless-hamlet-75534.herokuapp.com/
+ Heroku Link: https://limitless-hamlet-75534.herokuapp.com/quote
  Git repository: https://github.com/Tasuja/vayuquotes
 
 This application randomly reads a line from a csv file and returns a json, html, xml response as quote.json, quote.html, quote.xml respectively using Node.js and express module.  
