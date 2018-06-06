@@ -2,10 +2,10 @@
   "name": "vayu",
   "version": "1.0.0",
   "description": "Using node.js to create a web application to read from a csv file and display it in html, json and xml formats. ",
-  "main": "app.js",
+  "main": "quote.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node quote.js"
   },
   "engines": {
     "node": "8.11.2"
@@ -14,6 +14,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.3",
-    "readline-specific": "^1.0.4"
+    "jade": "^1.11.0",
+    "readline-specific": "^1.0.4",
+    "xml": "^1.0.1"
   }
 }

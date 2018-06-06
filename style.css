@@ -1,0 +1,10 @@
+div {
+	display: block;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color:rgba(0,0,179,1);
+    border-radius: 15px;}
+body {
+	margin:0 auto;
+}
