@@ -31,7 +31,7 @@ app.get('/quote.html', function (req, res) {
 });
 app.get('/quote.json', function (req, res) {
 	getData();
-	var jsondata = "{"+"\"title\":"+title.replace("\"","")+",\"author\":"+author+"}"
+	var jsondata = "{"+"\"title\":"+"\""+title+"\""+",\"author\":"+"\""+author+"\""+"}"
     fs.writeFile('./view/quote.json',jsondata,function(err){
         if (err) {
             console.log(err);
@@ -48,8 +48,12 @@ var author="";
 function getData(){
 	read.oneline('./quotes.csv', Math.floor((Math.random()*1001)+1),function(err,res){
 		if (err) console.error(err)
+		res.replace("\"","");	
 		data=res.split(',');
 		title=data.slice(0,data.length-1).join();
+		title=title.replace(/[^a-zA-Z ]/g,'');
 		author=data[data.length-1];
+		console.log(title);
+		console.log(author);
 	});
 }
